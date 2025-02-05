@@ -1,2 +1,2 @@
-# Empty dependencies file for Raycaster.
+# Empty dependencies file for MyGame.out.
 # This may be replaced when dependencies are built.

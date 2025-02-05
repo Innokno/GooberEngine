@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Raycaster.dir/all
+all: CMakeFiles/MyGame.out.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/Raycaster.dir/codegen
+codegen: CMakeFiles/MyGame.out.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,39 +75,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Raycaster.dir/clean
+clean: CMakeFiles/MyGame.out.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Raycaster.dir
+# Target rules for target CMakeFiles/MyGame.out.dir
 
 # All Build rule for target.
-CMakeFiles/Raycaster.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/CMakeFiles --progress-num=1,2 "Built target Raycaster"
-.PHONY : CMakeFiles/Raycaster.dir/all
+CMakeFiles/MyGame.out.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.out.dir/build.make CMakeFiles/MyGame.out.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.out.dir/build.make CMakeFiles/MyGame.out.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/CMakeFiles --progress-num=1,2 "Built target MyGame.out"
+.PHONY : CMakeFiles/MyGame.out.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Raycaster.dir/rule: cmake_check_build_system
+CMakeFiles/MyGame.out.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Raycaster.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyGame.out.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/CMakeFiles 0
-.PHONY : CMakeFiles/Raycaster.dir/rule
+.PHONY : CMakeFiles/MyGame.out.dir/rule
 
 # Convenience name for target.
-Raycaster: CMakeFiles/Raycaster.dir/rule
-.PHONY : Raycaster
+MyGame.out: CMakeFiles/MyGame.out.dir/rule
+.PHONY : MyGame.out
 
 # codegen rule for target.
-CMakeFiles/Raycaster.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/codegen
-.PHONY : CMakeFiles/Raycaster.dir/codegen
+CMakeFiles/MyGame.out.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.out.dir/build.make CMakeFiles/MyGame.out.dir/codegen
+.PHONY : CMakeFiles/MyGame.out.dir/codegen
 
 # clean rule for target.
-CMakeFiles/Raycaster.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/clean
-.PHONY : CMakeFiles/Raycaster.dir/clean
+CMakeFiles/MyGame.out.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.out.dir/build.make CMakeFiles/MyGame.out.dir/clean
+.PHONY : CMakeFiles/MyGame.out.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -214,6 +214,15 @@ CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+Raycaster.out_BINARY_DIR:STATIC=/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer
+
+//Value Computed by CMake
+Raycaster.out_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Raycaster.out_SOURCE_DIR:STATIC=/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer
+
+//Value Computed by CMake
 Raycaster_BINARY_DIR:STATIC=/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer
 
 //Value Computed by CMake

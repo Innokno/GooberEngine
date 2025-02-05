@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Raycaster
+# Target rules for targets named MyGame.out
 
 # Build rule for target.
-Raycaster: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Raycaster
-.PHONY : Raycaster
+MyGame.out: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyGame.out
+.PHONY : MyGame.out
 
 # fast build rule for target.
-Raycaster/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/build
-.PHONY : Raycaster/fast
+MyGame.out/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.out.dir/build.make CMakeFiles/MyGame.out.dir/build
+.PHONY : MyGame.out/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.out.dir/build.make CMakeFiles/MyGame.out.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.out.dir/build.make CMakeFiles/MyGame.out.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGame.out.dir/build.make CMakeFiles/MyGame.out.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Raycaster"
+	@echo "... MyGame.out"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
