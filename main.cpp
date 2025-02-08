@@ -6,24 +6,24 @@
 #include <SDL2/SDL_stdinc.h>
 #include <SDL2/SDL_surface.h>
 #include <SDL2/SDL_timer.h>
+#include <SDL2/SDL_video.h>
 #include <cstdint>
-#include <iostream>
+
+#include "goober/GameWindow.cpp"
+#include "goober/GameWindow.hpp"
 
 const int WIDTH = 800;
 const int HEIGHT = 600;
 
 int main() {
-	
-	SDL_Init(SDL_INIT_VIDEO);
-	
-	SDL_Window* window = SDL_CreateWindow("Pixel Drawing", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
-			WIDTH, HEIGHT, SDL_WINDOW_SHOWN);
 
-	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_SOFTWARE);
+	GameWindow* gameWindow = new GameWindow(WIDTH, HEIGHT, "Hello World");
+
+	SDL_Renderer* renderer = SDL_CreateRenderer(gameWindow->GetGameWindow(), -1, SDL_RENDERER_SOFTWARE);
 
 	SDL_Texture* mainGameTexture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STREAMING, 
 			WIDTH, HEIGHT); 
-
+	
 	bool running = true;
 
 	int currentTime = 0;
@@ -68,8 +68,6 @@ int main() {
 
 		}
 
-		std::cout << distance << std::endl;
-
 		SDL_UpdateTexture(mainGameTexture, nullptr, pixels, WIDTH * sizeof(uint32_t));	
 		SDL_RenderCopy(renderer, mainGameTexture, nullptr, nullptr);
 
@@ -83,7 +81,7 @@ int main() {
 	delete[] pixels;
 	SDL_DestroyTexture(mainGameTexture);
   SDL_DestroyRenderer(renderer);
- 	SDL_DestroyWindow(window);
+	gameWindow->Dispose();
   SDL_Quit();
   return 0;
 }
