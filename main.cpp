@@ -1,29 +1,16 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_events.h>
-#include <SDL2/SDL_keycode.h>
-#include <SDL2/SDL_pixels.h>
-#include <SDL2/SDL_render.h>
-#include <SDL2/SDL_stdinc.h>
-#include <SDL2/SDL_surface.h>
-#include <SDL2/SDL_timer.h>
-#include <SDL2/SDL_video.h>
 #include <cstdint>
 
-#include "goober/GameWindow.cpp"
-#include "goober/GameWindow.hpp"
+#include "goober/GameWindowManager.cpp"
 
-const int WIDTH = 800;
-const int HEIGHT = 600;
+const int WIDTH = 1000;
+const int HEIGHT = 800;
 
 int main() {
 
-	GameWindow* gameWindow = new GameWindow(WIDTH, HEIGHT, "Hello World");
+	GameWindowManager windowManager = GameWindowManager("Hello World", WIDTH, HEIGHT);
 
-	SDL_Renderer* renderer = SDL_CreateRenderer(gameWindow->GetGameWindow(), -1, SDL_RENDERER_SOFTWARE);
-
-	SDL_Texture* mainGameTexture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STREAMING, 
-			WIDTH, HEIGHT); 
-	
 	bool running = true;
 
 	int currentTime = 0;
@@ -68,10 +55,11 @@ int main() {
 
 		}
 
-		SDL_UpdateTexture(mainGameTexture, nullptr, pixels, WIDTH * sizeof(uint32_t));	
-		SDL_RenderCopy(renderer, mainGameTexture, nullptr, nullptr);
+		SDL_UpdateTexture(windowManager.GetMainTexture(), nullptr, pixels, WIDTH * sizeof(uint32_t));	
+		SDL_RenderCopy(windowManager.GetRenderer(), windowManager.GetMainTexture(),
+				nullptr, nullptr);
 
-    SDL_RenderPresent(renderer);
+    SDL_RenderPresent(windowManager.GetRenderer());
 
 		currentTime = SDL_GetTicks();
 		deltaTime = (currentTime - previousTime) / 1000.0f;
@@ -79,9 +67,7 @@ int main() {
 	}
 
 	delete[] pixels;
-	SDL_DestroyTexture(mainGameTexture);
-  SDL_DestroyRenderer(renderer);
-	gameWindow->Dispose();
+	windowManager.Dispose();
   SDL_Quit();
   return 0;
 }
