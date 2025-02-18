@@ -20,7 +20,7 @@ struct GameWindowManager {
 		int m_windowWidth;
 		int m_windowHeight;
 
-		uint32_t* m_mainPixelArray;
+uint32_t* m_mainPixelArray;
 
 	public:
 		GameWindowManager(const char*, int, int);	
@@ -32,4 +32,6 @@ struct GameWindowManager {
 		SDL_Window* GetGameWindow();
 		SDL_Renderer* GetRenderer();
 		SDL_Texture* GetMainTexture();
+
+		uint32_t* GetMainPixelArray();
 };

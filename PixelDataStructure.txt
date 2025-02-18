@@ -1,0 +1,19 @@
+struct GameWindowManager;
+
+Retrieving pixel data and writing data to pixels:
+
+; SetPixelData parameter:
+
+- 	rowIndex
+-   columnIndex
+-   colorData
+
+
+Pixel Data structure:
+
+; Pixel:
+
+-   Position in PixelArray
+-   ColorData (r, g, b, a)
+-  
+

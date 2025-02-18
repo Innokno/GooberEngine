@@ -1,5 +1,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_events.h>
+#include <SDL2/SDL_pixels.h>
+#include <SDL2/SDL_render.h>
 #include <cstdint>
 
 #include "goober/GameWindowManager.cpp"
@@ -19,7 +21,7 @@ int main() {
 	float distance = 0;
 	float deltaTime = 0; 
 
-	uint32_t* pixels = new uint32_t[WIDTH*HEIGHT];
+	uint32_t* pixels = windowManager.GetMainPixelArray();
 
 	SDL_Event event;
 
@@ -48,25 +50,21 @@ int main() {
 			}
 		}
 
-		for (int i = 0; i < WIDTH; i++) {
+		SDL_SetRenderDrawColor(windowManager.GetRenderer(), 0, 0, 0, 255);
+		SDL_RenderClear(windowManager.GetRenderer());
 
-			pixels[WIDTH * i + (WIDTH / 2)] = SDL_MapRGBA(SDL_AllocFormat(SDL_PIXELFORMAT_RGBA8888), 
-					255, 255, 255, 255);
-
-		}
-
-		SDL_UpdateTexture(windowManager.GetMainTexture(), nullptr, pixels, WIDTH * sizeof(uint32_t));	
-		SDL_RenderCopy(windowManager.GetRenderer(), windowManager.GetMainTexture(),
-				nullptr, nullptr);
+		SDL_SetRenderDrawColor(windowManager.GetRenderer(), 255, 255, 255, 255);
+		SDL_RenderDrawLine(windowManager.GetRenderer(), 0, 0, 0, 800);
 
     SDL_RenderPresent(windowManager.GetRenderer());
 
 		currentTime = SDL_GetTicks();
 		deltaTime = (currentTime - previousTime) / 1000.0f;
 		previousTime = currentTime;
+	
+		std::cout << "DeltaTime: " << deltaTime << std::endl;	
 	}
 
-	delete[] pixels;
 	windowManager.Dispose();
   SDL_Quit();
   return 0;

@@ -48,7 +48,7 @@ GameWindowManager::GameWindowManager(const char* windowName, int width = 800, in
 	GameWindowManager::m_mainTexture =
 		SDL_CreateTexture(
 				GameWindowManager::m_renderer,
-				SDL_PIXELFORMAT_RGBA8888, 
+				SDL_PIXELFORMAT_RGBA32, 
 				SDL_TEXTUREACCESS_STREAMING,
 				GameWindowManager::m_windowWidth,
 				GameWindowManager::m_windowHeight);
@@ -83,6 +83,10 @@ SDL_Window* GameWindowManager::GetGameWindow() {
 
 }
 
+uint32_t* GameWindowManager::GetMainPixelArray() {
+	return GameWindowManager::m_mainPixelArray;
+}
+
 void GameWindowManager::Dispose() {
 
 	if (GameWindowManager::m_isDisposed) {	
@@ -92,8 +96,8 @@ void GameWindowManager::Dispose() {
 	GameWindowManager::m_isDisposed = true;
 	SDL_DestroyWindow(GameWindowManager::m_gameWindow);
 	SDL_DestroyRenderer(GameWindowManager::m_renderer);
-	SDL_DestroyTexture(
-			GameWindowManager::m_mainTexture);
+	SDL_DestroyTexture(GameWindowManager::m_mainTexture);
+	delete[] GameWindowManager::m_mainPixelArray;
 }
 
 GameWindowManager::~GameWindowManager() {
