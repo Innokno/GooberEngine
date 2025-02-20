@@ -9,3 +9,4 @@ add_executable(MyGame.out main.cpp)
 
 target_include_directories(MyGame.out PRIVATE /opt/homebrew/include/SDL2)
 target_link_libraries(MyGame.out PRIVATE SDL2)
+target_link_libraries(MyGame.out PRIVATE yaml-cpp)

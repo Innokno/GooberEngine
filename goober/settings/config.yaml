@@ -1,0 +1,9 @@
+---
+
+rayCount: 120
+tileSize: 64
+fov: 90
+
+screen:
+  width: 1280
+  height: 720

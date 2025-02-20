@@ -2,16 +2,15 @@
 #include <SDL2/SDL_events.h>
 #include <SDL2/SDL_pixels.h>
 #include <SDL2/SDL_render.h>
-#include <cstdint>
+//#include <iostream>
 
-#include "goober/GameWindowManager.cpp"
-
-const int WIDTH = 1000;
-const int HEIGHT = 800;
+#include "goober/GooberWindowManager.hpp"
+#include "goober/GooberWindowManager.cpp"
 
 int main() {
 
-	GameWindowManager windowManager = GameWindowManager("Hello World", WIDTH, HEIGHT);
+	GooberWindowManager windowManager = GooberWindowManager();
+	windowManager.InitGameWindow("Hello World", "../goober/settings/config.yaml");
 
 	bool running = true;
 
@@ -20,8 +19,6 @@ int main() {
 
 	float distance = 0;
 	float deltaTime = 0; 
-
-	uint32_t* pixels = windowManager.GetMainPixelArray();
 
 	SDL_Event event;
 
@@ -50,19 +47,11 @@ int main() {
 			}
 		}
 
-		SDL_SetRenderDrawColor(windowManager.GetRenderer(), 0, 0, 0, 255);
-		SDL_RenderClear(windowManager.GetRenderer());
-
-		SDL_SetRenderDrawColor(windowManager.GetRenderer(), 255, 255, 255, 255);
-		SDL_RenderDrawLine(windowManager.GetRenderer(), 0, 0, 0, 800);
-
-    SDL_RenderPresent(windowManager.GetRenderer());
-
 		currentTime = SDL_GetTicks();
 		deltaTime = (currentTime - previousTime) / 1000.0f;
 		previousTime = currentTime;
 	
-		std::cout << "DeltaTime: " << deltaTime << std::endl;	
+		//std::cout << "DeltaTime: " << deltaTime << std::endl;	
 	}
 
 	windowManager.Dispose();
