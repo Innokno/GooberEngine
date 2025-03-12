@@ -20,7 +20,9 @@ class Game : public GooberGame {
 		}
 		
 		void Update(float deltaTime) override {
-			
+		
+			std::cout << deltaTime << std::endl;
+
 			SDL_SetRenderDrawColor(GetRenderer(), 255, 255, 255, 255);
 			SDL_RenderDrawLine(GetRenderer(), 10, 10, 10, 720);
 
