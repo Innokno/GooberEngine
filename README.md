@@ -5,5 +5,5 @@ School project for informatica
 - cd into GooberEngine
 - mkdir build in GooberEngine
 - cd into build
-- run '''cmake . and then cmake --build . '''
+- run ```cmake . and then cmake --build . ```
 - run ./MyGame.out
