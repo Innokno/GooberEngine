@@ -1,9 +1,7 @@
 #include "GooberGame.hpp"
-#include "SDL_events.h"
 #include "SDL_timer.h"
 
 GooberGame::GooberGame(const char* name, std::string configFilePath) {
-	
 	GooberGame::InitGameWindow(name, configFilePath);
 }
 
@@ -16,11 +14,9 @@ void GooberGame::Run() {
 	float deltaTime = 0.0f;
 	float previousTime = SDL_GetTicks64();
 
-	SDL_Event event;
-
 	while (GooberGame::GetIsRunning()) {
 		
-		float currentTime = SDL_GetTicks64();
+		float currentTime = SDL_GetTicks();
 		deltaTime = (currentTime - previousTime) / 1000.0f;	
 		previousTime = currentTime; 
 
@@ -32,22 +28,13 @@ void GooberGame::Run() {
 
 		accumulator += deltaTime;
 
-		while (SDL_PollEvent(&event)) {
-			
-			if (event.type == SDL_QUIT) {
-				
-				GooberGame::SetIsRunning(false);
-
-			}
-		
-		}
-
 		while (accumulator >= TIMESTEP) {
 			
 			Update(TIMESTEP);
 			accumulator -= TIMESTEP;
-			
+				
 		}
+
 	}
 
 	if (!GooberGame::GetIsDisposed()) {

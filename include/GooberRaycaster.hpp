@@ -1,28 +1,25 @@
 #pragma once
 
 #include <SDL2/SDL.h>
-#include "GooberPoint.hpp"
-#include "GooberRay.hpp"
+#include "Player.hpp"
+#include "SDL_render.h"
 
-// Handles casting all the rays
+//Class that abstracts raycasting behaviour
 class GooberRaycaster {	
 	private:
+		Player* parentPlr;
+
 		bool isDisposed;
 
 		int m_tileSize;
 		int m_fov;
+		int m_rayCount;
 
-		GooberRay* m_rays;
-	
 	public:
-		
-		GooberRaycaster(int rayAmount, int fov, int tileSize);
-		GooberRaycaster();
+		void Render(SDL_Renderer* renderer);
 
-		// Draw line using x point of ray 
-		int DrawLine(GooberPoint startPoint, GooberPoint endPoint); // Use SDL2 to draw a line using the information from {CastRay()}
-		
-		bool CastRay(GooberPoint startPoint, GooberPoint endPoint);
+		GooberRaycaster(int rayCount, int fov, int tileSize, Player* player);
+		GooberRaycaster();
 
 		void Dispose();
 };

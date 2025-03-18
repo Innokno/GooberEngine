@@ -14,13 +14,43 @@ GooberWindowManager::GooberWindowManager() {
 
 }
 
+int GooberWindowManager::GetFOV() {
+	
+	return m_configLoader.fov;
+
+}
+
+int GooberWindowManager::GetTileSize() {
+	
+	return m_configLoader.tileSize;
+	
+}
+
+int GooberWindowManager::GetRayCount() {
+	
+	return m_configLoader.rayCount;
+
+}
+
+int GooberWindowManager::GetWindowHeight() {
+		
+	return m_configLoader.windowHeight;
+
+}
+
+int GooberWindowManager::GetWindowWidth() {
+	
+	return m_configLoader.windowWidth;
+
+}
+
 int GooberWindowManager::InitGameWindow(const char* name, std::string filePath) {
-	GooberProjectConfigLoader projectConfig = GooberProjectConfigLoader::LoadProjectConfig(filePath);
+	m_configLoader = GooberProjectConfigLoader::LoadProjectConfig(filePath);
 
 	SDL_Init(SDL_INIT_VIDEO);
 
 	GooberWindowManager::gameWindow = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 
-			projectConfig.windowWidth, projectConfig.windowHeight, SDL_WINDOW_SHOWN);
+			m_configLoader.windowWidth, m_configLoader.windowHeight, SDL_WINDOW_SHOWN);
 
 	if (GooberWindowManager::gameWindow == nullptr) {
 	
@@ -30,7 +60,7 @@ int GooberWindowManager::InitGameWindow(const char* name, std::string filePath) 
 	}
 
 	GooberWindowManager::renderer = SDL_CreateRenderer(GooberWindowManager::gameWindow, -1,
-			SDL_RENDERER_SOFTWARE);
+			SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
 	if (GooberWindowManager::renderer == nullptr) {
 		
@@ -57,6 +87,12 @@ bool GooberWindowManager::GetIsDisposed() {
 void GooberWindowManager::SetIsRunning(bool value) {
 	
 	isRunning = value;
+
+}
+
+SDL_Window* GooberWindowManager::GetWindow() {
+		
+	return GooberWindowManager::gameWindow;
 
 }
 

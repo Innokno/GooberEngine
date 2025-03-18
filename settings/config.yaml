@@ -1,9 +1,14 @@
 ---
 
-rayCount: 120
-tileSize: 64
+stripRes: 4
+rayCount: 160
+tileSize: 32
 fov: 90
 
+grid:
+  columnAmount: 20
+  rowAmount: 10
+
 screen:
-  width: 1280
-  height: 720
+  width: 640
+  height: 320

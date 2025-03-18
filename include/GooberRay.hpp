@@ -1,12 +1,16 @@
 #pragma once
-#include "GooberPoint.hpp"
+
+#include "SDL_rect.h"
+#include <SDL2/SDL.h>
 
 // Defines what a ray(line)
-// handles detecting of possible wall collisions
-struct GooberRay {	
-	GooberPoint m_startPoint;
-	GooberPoint m_endPoint;
+struct GooberRay {
+	float rayAngle;
+
+	SDL_Point startPoint;
+	SDL_Point endPoint;
 
 	GooberRay();
-	GooberRay(GooberPoint startPoint, GooberPoint endPoint);		
+	GooberRay(float rayAngle, SDL_Point start, SDL_Point end);
+
 };

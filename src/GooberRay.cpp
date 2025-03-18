@@ -1,10 +1,11 @@
 #include "GooberRay.hpp"
 
-GooberRay::GooberRay() {}
+GooberRay::GooberRay(float rayAngle, SDL_Point start, SDL_Point end) {
 
-GooberRay::GooberRay(GooberPoint startPoint, GooberPoint endPoint) {
-	
-	m_startPoint = startPoint;
-	m_endPoint = endPoint;
+	GooberRay::startPoint = start;
+	GooberRay::endPoint = end;
+	GooberRay::rayAngle = rayAngle;
 
 }
+
+GooberRay::GooberRay() {}
