@@ -2,7 +2,6 @@
 
 #include <SDL2/SDL.h>
 #include "Player.hpp"
-#include "SDL_render.h"
 
 //Class that abstracts raycasting behaviour
 class GooberRaycaster {	

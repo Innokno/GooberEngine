@@ -1,9 +1,9 @@
 #pragma once
 
 #include "GooberPoint.hpp"
-#include "SDL_rect.h"
-#include "SDL_render.h"
-#include <SDL2/SDL.h>
+
+#include <SDL2/SDL_rect.h>
+#include <SDL2/SDL_render.h>
 
 class Player {
 	

@@ -1,7 +1,7 @@
 #include "Player.hpp"
 #include "GooberPoint.hpp"
-#include "SDL_render.h"
 
+#include <SDL2/SDL_render.h>
 #include <cmath>
 #include <iostream>
 

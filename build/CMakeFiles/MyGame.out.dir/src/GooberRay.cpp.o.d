@@ -1,7 +1,7 @@
 CMakeFiles/MyGame.out.dir/src/GooberRay.cpp.o: \
   /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberRay.cpp \
   /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include/GooberRay.hpp \
-  /opt/homebrew/include/SDL2/SDL_rect.h \
+  /opt/homebrew/include/SDL2/SDL.h /opt/homebrew/include/SDL2/SDL_main.h \
   /opt/homebrew/include/SDL2/SDL_stdinc.h \
   /opt/homebrew/include/SDL2/SDL_config.h \
   /opt/homebrew/include/SDL2/SDL_platform.h \
@@ -337,22 +337,22 @@ CMakeFiles/MyGame.out.dir/src/GooberRay.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/float.h \
-  /opt/homebrew/include/SDL2/SDL_error.h \
-  /opt/homebrew/include/SDL2/SDL_pixels.h \
-  /opt/homebrew/include/SDL2/SDL_endian.h \
-  /opt/homebrew/include/SDL2/SDL_rwops.h \
-  /opt/homebrew/include/SDL2/SDL.h /opt/homebrew/include/SDL2/SDL_main.h \
   /opt/homebrew/include/SDL2/SDL_assert.h \
   /opt/homebrew/include/SDL2/SDL_atomic.h \
   /opt/homebrew/include/SDL2/SDL_audio.h \
+  /opt/homebrew/include/SDL2/SDL_error.h \
+  /opt/homebrew/include/SDL2/SDL_endian.h \
   /opt/homebrew/include/SDL2/SDL_mutex.h \
   /opt/homebrew/include/SDL2/SDL_thread.h \
+  /opt/homebrew/include/SDL2/SDL_rwops.h \
   /opt/homebrew/include/SDL2/SDL_clipboard.h \
   /opt/homebrew/include/SDL2/SDL_cpuinfo.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/arm_neon.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/arm_bf16.h \
   /opt/homebrew/include/SDL2/SDL_events.h \
   /opt/homebrew/include/SDL2/SDL_video.h \
+  /opt/homebrew/include/SDL2/SDL_pixels.h \
+  /opt/homebrew/include/SDL2/SDL_rect.h \
   /opt/homebrew/include/SDL2/SDL_surface.h \
   /opt/homebrew/include/SDL2/SDL_blendmode.h \
   /opt/homebrew/include/SDL2/SDL_keyboard.h \

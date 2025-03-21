@@ -64,16 +64,14 @@ CMAKE_BINARY_DIR = /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/
 
 # The main recursive "all" target.
 all: CMakeFiles/MyGame.out.dir/all
-all: yaml-cpp/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/MyGame.out.dir/codegen
-codegen: yaml-cpp/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: yaml-cpp/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.

@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = -DYAML_CPP_STATIC_DEFINE
 
-CXX_INCLUDES = -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/opt/homebrew/include/SDL2 -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include
+CXX_INCLUDES = -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include
 
 CXX_FLAGSarm64 =  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk
 

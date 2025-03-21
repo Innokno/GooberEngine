@@ -1,6 +1,5 @@
 #pragma once
 
-#include "SDL_rect.h"
 #include <SDL2/SDL.h>
 
 // Defines what a ray(line)

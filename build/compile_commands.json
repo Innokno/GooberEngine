@@ -1,55 +1,55 @@
 [
 {
   "directory": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/opt/homebrew/include/SDL2 -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberProjectConfigLoader.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberProjectConfigLoader.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberProjectConfigLoader.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberProjectConfigLoader.cpp",
   "file": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberProjectConfigLoader.cpp",
   "output": "CMakeFiles/MyGame.out.dir/src/GooberProjectConfigLoader.cpp.o"
 },
 {
   "directory": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/opt/homebrew/include/SDL2 -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/Player.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/Player.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/Player.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/Player.cpp",
   "file": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/Player.cpp",
   "output": "CMakeFiles/MyGame.out.dir/src/Player.cpp.o"
 },
 {
   "directory": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/opt/homebrew/include/SDL2 -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberWindowManager.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberWindowManager.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberWindowManager.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberWindowManager.cpp",
   "file": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberWindowManager.cpp",
   "output": "CMakeFiles/MyGame.out.dir/src/GooberWindowManager.cpp.o"
 },
 {
   "directory": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/opt/homebrew/include/SDL2 -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberGame.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberGame.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberGame.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberGame.cpp",
   "file": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberGame.cpp",
   "output": "CMakeFiles/MyGame.out.dir/src/GooberGame.cpp.o"
 },
 {
   "directory": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/opt/homebrew/include/SDL2 -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberRaycaster.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberRaycaster.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberRaycaster.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberRaycaster.cpp",
   "file": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberRaycaster.cpp",
   "output": "CMakeFiles/MyGame.out.dir/src/GooberRaycaster.cpp.o"
 },
 {
   "directory": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/opt/homebrew/include/SDL2 -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberRay.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberRay.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberRay.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberRay.cpp",
   "file": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberRay.cpp",
   "output": "CMakeFiles/MyGame.out.dir/src/GooberRay.cpp.o"
 },
 {
   "directory": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/opt/homebrew/include/SDL2 -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberPoint.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberPoint.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/GooberPoint.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberPoint.cpp",
   "file": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/GooberPoint.cpp",
   "output": "CMakeFiles/MyGame.out.dir/src/GooberPoint.cpp.o"
 },
 {
   "directory": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/opt/homebrew/include/SDL2 -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/main.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/main.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/main.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/main.cpp",
   "file": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/main.cpp",
   "output": "CMakeFiles/MyGame.out.dir/src/main.cpp.o"
 },
 {
   "directory": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/opt/homebrew/include/SDL2 -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/Game.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/Game.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/include -I/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/yaml-cpp/include  -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/MyGame.out.dir/src/Game.cpp.o -c /Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/Game.cpp",
   "file": "/Users/nikolaiovereem/Documents/Code/RayCastingEngine/CPPVer/src/Game.cpp",
   "output": "CMakeFiles/MyGame.out.dir/src/Game.cpp.o"
 },

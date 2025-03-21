@@ -1,8 +1,8 @@
 #include "GooberRaycaster.hpp"
 #include "Player.hpp"
-#include "SDL_render.h"
 #include "constants.hpp"
 
+#include <SDL2/SDL.h>
 #include <cmath>
 
 GooberRaycaster::GooberRaycaster() {}

@@ -1,5 +1,6 @@
 #include "GooberGame.hpp"
-#include "SDL_timer.h"
+
+#include <SDL2/SDL_timer.h>
 
 GooberGame::GooberGame(const char* name, std::string configFilePath) {
 	GooberGame::InitGameWindow(name, configFilePath);

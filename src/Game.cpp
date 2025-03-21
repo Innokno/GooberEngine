@@ -1,10 +1,9 @@
 #include "GooberGame.hpp"
 #include "GooberRaycaster.hpp"
-#include "SDL_events.h"
 #include "Player.hpp"
-#include "SDL_render.h"
 #include "constants.hpp"
 
+#include <SDL2/SDL.h>
 #include <cmath>
 #include <string>
 

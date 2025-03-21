@@ -1,6 +1,13 @@
 School project for informatica
- 
-- To download the project you'll need to have the most recent version of SDL2 installed
+
+Prerequisites:
+
+- SDL2
+- C++
+- Cmake
+
+How to build
+
 - git clone https://github.com/Innokno/GooberEngine
 - cd into GooberEngine
 - mkdir build in GooberEngine
